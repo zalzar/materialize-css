@@ -25,7 +25,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="container col s6 m4 l4 center-align">
-				<h4>Icons</h4>
+				<h4>Buttons</h4>
 				<a href="./buttons.html" class="btn-floating large purple darken-3">
 					<i class="material-icons">add</i>
 				</a>
@@ -72,6 +72,13 @@
 					<i class="material-icons">menu</i>
 				</a>
 			</div>
+
+			<div class="container col s6 m4 l4 center-align">
+				<h4>Collections</h4>
+				<a href="./collections.html" class="btn-floating large purple darken-3">
+					<i class="material-icons">menu</i>
+				</a>
+			</div>
 		</div>
 	</div>
 
@@ -83,12 +90,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 	<script>
-        $(document).ready(function () {
-            // Initialize collapse button
-            $(".button-collapse").sideNav();
-            // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-            //$('.collapsible').collapsible();
-        })
+		$(document).ready(function() {
+			// Initialize collapse button
+			$(".button-collapse").sideNav();
+			// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+			//$('.collapsible').collapsible();
+		})
 	</script>
 </body>
 
