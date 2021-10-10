@@ -1,0 +1,94 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>materialize CSS</title>
+</head>
+
+<body>
+
+
+    <!-- example 1 -->
+
+    <nav class="purple">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo left">logo</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#" class="btn-floating indigo darken-4 z-depth-0">
+                        <i class="material-icons">notifications</i>
+                    </a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <br>
+    <div class="container">
+        <a class="btn-floating btn-large blue lighten-1" href="../">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+        // // example 1
+        // $( document ).ready(function(){
+        //     $(".button-collapse").sideNav();
+        // })
+
+
+        $(document).ready(function () {
+            // Initialize collapse button
+            $(".button-collapse").sideNav({
+                menuWidth: 290,
+            });
+
+            // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+            //$(".button-collapse").sideNav();
+
+            // $('.button-collapse').sideNav({
+            //     menuWidth: 300, // Default is 300
+            //     edge: 'right', // Choose the horizontal origin
+            //     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            //     draggable: true, // Choose whether you can drag to open on touch screens,
+            //     //onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+            //     //onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+            // }
+            // );
+        })
+
+    </script>
+</body>
+
+</html>
