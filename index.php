@@ -19,9 +19,6 @@
 
 <body>
 
-
-
-
 	<div class="container">
 		<div class="row">
 			<div class="container col s6 m4 l4 center-align">
@@ -76,6 +73,13 @@
 			<div class="container col s6 m4 l4 center-align">
 				<h4>Collections</h4>
 				<a href="./collections.html" class="btn-floating large purple darken-3">
+					<i class="material-icons">menu</i>
+				</a>
+			</div>
+
+			<div class="container col s6 m4 l4 center-align">
+				<h4>Modals</h4>
+				<a href="./modals.html" class="btn-floating large purple darken-3">
 					<i class="material-icons">menu</i>
 				</a>
 			</div>
