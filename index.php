@@ -20,6 +20,7 @@
 <body>
 
 	<div class="container">
+		<h1 class="center-align">UI Practices</h1>
 		<div class="row">
 			<div class="container col s6 m4 l4 center-align">
 				<h4>Buttons</h4>
