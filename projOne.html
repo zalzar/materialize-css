@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>Photo Ninja</title>
+
+    <style>
+        header {
+            background: url(img/man2.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1300px;
+        }
+
+        @media screen and (max-width:670px) {
+            header {
+                background-size: cover;
+                background-position: center;
+                min-height: 900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="transparent">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo left">Photo Ninja</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse right">
+                        <i  class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Login</a></li>
+
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- photo / grid -->
+
+    <!-- parallax -->
+
+    <!-- services / tabs -->
+
+    <!-- parallax -->
+
+    <!-- contact form -->
+
+    <!-- footer -->
+    <div class="container">
+        <a class="btn-floating btn-large blue lighten-1 right" href="../">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // Initialize collapse button
+            $(".button-collapse").sideNav({
+                menuWidth: 290,
+            });
+        })
+    </script>
+</body>
+
+</html>
