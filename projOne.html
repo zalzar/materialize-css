@@ -25,12 +25,26 @@
             min-height: 1300px;
         }
 
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
         @media screen and (max-width:670px) {
             header {
                 background-size: cover;
                 background-position: center;
                 min-height: 900px;
             }
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
         }
     </style>
 </head>
@@ -43,7 +57,7 @@
                 <div class="nav-wrapper">
                     <a href="" class="brand-logo left">Photo Ninja</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse right">
-                        <i  class="material-icons">menu</i>
+                        <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#">Home</a></li>
@@ -63,15 +77,112 @@
         </nav>
     </header>
     <!-- photo / grid -->
-
+    <section id="photos" class="container section">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="./img/portrait.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Portrate</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="./img/city.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="indigo-text text-darken-4">City</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="./img/nature.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+    </section>
     <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./img/street.jpg" alt="" class="responsive-img">g
+        </div>
+    </div>
 
     <!-- services / tabs -->
-
+    <div class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">I'm just practicing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#Photography" class="indigo-text text-darken-4">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#Editing" class="indigo-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="Photography">
+                    <p class="flow-text indigo-text text-darken-4">Photography</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum fuga, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore
+                        magna aliqua sed doeiusmod tempor incididunt ut labore et dolore magna aliqua id est laborum et
+                        dolorum fuga. molestias excepturi sint occaecati cupiditate nonunt in culpa qui officia deserunt
+                        mollitia animi.</p>
+                </div>
+                <div class="col s12" id="Editing">
+                    <p class="flow-text indigo-text text-darken-4">Editing</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisiut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.At
+                        vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- parallax -->
-
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./img/stars.jpg" alt="" class="responsive-img">g
+        </div>
+    </div>
     <!-- contact form -->
-
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </div>
     <!-- footer -->
     <div class="container">
         <a class="btn-floating btn-large blue lighten-1 right" href="../">
@@ -91,7 +202,10 @@
             // Initialize collapse button
             $(".button-collapse").sideNav({
                 menuWidth: 290,
-            }); 
+            });
+            $(".materialboxed").materialbox();
+            $(".parallax").parallax();
+            $("tabs").tabs();
         })
     </script>
 </body>
