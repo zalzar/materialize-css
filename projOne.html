@@ -13,8 +13,9 @@
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Photo Ninja</title>
 
     <style>
@@ -26,10 +27,12 @@
         }
 
         .section {
-            padding-top: 4vw;
+            padding-top: 5vw;
             padding-bottom: 4vw;
         }
-
+        .sectionTwo {
+            padding-top: 4vw;
+        }
         @media screen and (max-width:670px) {
             header {
                 background-size: cover;
@@ -55,29 +58,46 @@
         <nav class="transparent">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="" class="brand-logo left">Photo Ninja</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse right">
+                    <a href="#!" class="brand-logo left">Logo</a>
+                    <a href="" data-target="mobile-menu" class="sidenav-trigger right">
                         <i class="material-icons">menu</i>
                     </a>
-                    <ul class="right hide-on-med-and-down">
+                    <ul class="hide-on-med-and-down right">
+                        
+                        <li>
+                            <a href="" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Login</a></li>
-
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Contacts">Contacts</a></li>
+                        <li><a href="#Photos">Photos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <ul class="sidenav" id="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
     </header>
+
     <!-- photo / grid -->
-    <section id="photos" class="container section">
+    <section id="Photos" class="container section scrollspy">
         <div class="row">
             <div class="col s12 l4">
                 <img src="./img/portrait.jpg" alt="" class="responsive-img materialboxed">
@@ -114,6 +134,7 @@
             </div>
         </div>
     </section>
+
     <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
@@ -122,7 +143,7 @@
     </div>
 
     <!-- services / tabs -->
-    <div class="container section" id="services">
+    <div class="container sectionTwo scrollspy" id="Services">
         <div class="row">
             <div class="col s12 l4">
                 <h2 class="indigo-text text-darken-4">I'm just practicing</h2>
@@ -134,13 +155,13 @@
             <div class="col s12 l6 offset-l2">
                 <ul class="tabs">
                     <li class="tab col s6">
-                        <a href="#Photography" class="indigo-text text-darken-4">Photography</a>
+                        <a href="#Photography-swipe-1" class="indigo-text text-darken-4">Photography</a>
                     </li>
                     <li class="tab col s6">
-                        <a href="#Editing" class="indigo-text text-darken-4">Editing</a>
+                        <a href="#Editing-swipe-2" class="indigo-text text-darken-4">Editing</a>
                     </li>
                 </ul>
-                <div class="col s12" id="Photography">
+                <div class="col s12" id="Photography-swipe-1">
                     <p class="flow-text indigo-text text-darken-4">Photography</p>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                         deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
@@ -150,7 +171,7 @@
                         dolorum fuga. molestias excepturi sint occaecati cupiditate nonunt in culpa qui officia deserunt
                         mollitia animi.</p>
                 </div>
-                <div class="col s12" id="Editing">
+                <div class="col s12" id="Editing-swipe-2">
                     <p class="flow-text indigo-text text-darken-4">Editing</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -170,42 +191,118 @@
     </div>
     <!-- contact form -->
     <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <section class="section scrollspy" id="Contacts">
+            <div class="row">
+                <div class="col s12 l5">
+                    <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua.</p>
+                </div>
+                <div class="col s12 l5 offset-l2">
+                    <form action="">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email">
+                            <label for="email">Your email</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">choose a date you need me</label>
+                        </div>
+                        <div class="input-field">
+                            <p>Services required</p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Photography</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Editing</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
     <!-- footer -->
-    <div class="container">
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About me</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        laboreet dolore magna aliqua.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Contact me</h5>
+                    <ul>
+                        <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Instagram</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Linked In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2021 ProjOne</div>
+        </div>
+    </footer>
+    <!-- <div class="container">
         <a class="btn-floating btn-large blue lighten-1 right" href="../">
             <i class="material-icons">arrow_back</i>
         </a>
     </div>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
     <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var elems = document.querySelectorAll('.sidenav');
+        //     var instances = M.Sidenav.init(elems, options);
+        // });
         $(document).ready(function () {
             // Initialize collapse button
-            $(".button-collapse").sideNav({
-                menuWidth: 290,
+
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs({
+                swipeable: true,
             });
-            $(".materialboxed").materialbox();
-            $(".parallax").parallax();
-            $("tabs").tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true,
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
         })
     </script>
 </body>
