@@ -1,0 +1,22 @@
+# mod_rewrite starts here
+# Does not apply to the existing directories, ,meaning that if the folder exists on the server then don't change anything and don't run the rule
+# Check for file in directory with .html extension 
+# Here we actually show the page that has the .html extension
+
+#DirectoryIndex index.html
+ErrorDocument 404 /p404.html
+
+
+#RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www\.)?xoload\.com/.*$ [NC]
+#RewriteRule .*\.(gif|jpeg|png)$ http://www.xoload.com/unpleasantness.jpg [R,NC,L]
+#RewriteRule .*\.(gif|jpeg|png)$ - [F]
+
+#RewriteCond %{HTTP_HOST} ^xoload\.com$
+#RewriteRule ^(.*)$ http://www.xoload.com/$1 [R=301]
+
+
+#To block a specific IP address, fire up bellow conditions
+#RewriteCond %{REMOTE_ADDR} ^(12\.34\.56\.789)$
+#RewriteRule (.*) - [F,L]

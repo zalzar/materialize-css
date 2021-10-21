@@ -1,6 +1,9 @@
 .box {
     height: 200px;
 }
-.col{
+.mycol{
     padding-bottom: 50px !important;
+}
+.topMarg{
+    margin-top: 250px !important;
 }
