@@ -1,9 +1,10 @@
-.box {
+.box{
     height: 200px;
 }
-.mycol{
-    padding-bottom: 50px !important;
-}
 .topMarg{
-    margin-top: 250px !important;
+    margin-top: 50px !important;
+}
+body{
+    background-color: #696969 !important;
+    color: #1A1A1A !important;
 }
